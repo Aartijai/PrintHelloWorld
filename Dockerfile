@@ -1,7 +1,7 @@
-//Dockerfile is just INSTRUCTIONS for Docker
-//What is the java code that uw ill run with
-//specify where from GITHub the  project.jar file is  there/
-//What is the package
+# Dockerfile is just INSTRUCTIONS for Docker
+# What is the java code that it will run with
+# Specify the jar file to run
+
 FROM openjdk:17
-COPY target/HelloWorld.jar app.jar
+COPY target/HelloWorld-0.0.1-SNAPSHOT.jar app.jar
 ENTRYPOINT ["java", "-jar", "app.jar"]
